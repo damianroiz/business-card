@@ -1,6 +1,7 @@
 import React from 'react'
 import profile from '../resources/profile.png'
-import mail from '../resources/mail.png'
+import mail from '../resources/email.png'
+import linkedin from '../resources/linkedin.png'
 import '../styles.css'
 
 
@@ -13,12 +14,18 @@ export default function Main() {
       <h2>Frontend Developer</h2>
       <small>damianroiz.com</small>
       <div className="buttons">
-        <a href='../resources/main.png' className="email">
+        <div className="emailbtn">
+        <img src={mail}  className="emailicon" alt="icon"/>
+        <a href='email.com'>
         Email
         </a>
-        <a href="#" className="linkedin">
+        </div>
+       <div className="linkedinbtn">
+        <img src={linkedin}  className="linkedin-icon" alt="icon"/>
+        <a href='linkedin.com'>
         LinkedIn
         </a>
+        </div>
       </div>
         <div className="aboutsection">
         <div>

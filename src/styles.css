@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Lato:wght@300;400;700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Lato:wght@300;400;500;700&family=Roboto:wght@500&display=swap');
 
 * {
   margin: 0;
@@ -24,10 +24,7 @@ h2 {
   color: #F3BF99;
 }
 
-.mailIcon {
-  width: 18px;
-  margin: 2px;
-}
+
 
 .App {
   margin: auto;
@@ -51,25 +48,33 @@ h2 {
   justify-content: space-between;
   gap: 25px;
   padding-block: 15px;
+  cursor: pointer;
 }
 
-
-.email, .linkedin {
-    background-color: #8fce00;
-    height: 40px;
-    width: 100px;
-    text-decoration: none;
-    text-align: center;
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-    color: #20123c;
-    font-family: 'roboto', sans-serif;
-    font-weight: 400;
-    letter-spacing: 1.05px;
+.emailbtn, .linkedinbtn {
+  background-color: #8fce00;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  height: 40px;
+  width: 120px;
 
 }
 
+.emailbtn > a,
+.linkedinbtn > a {
+  font-family: 'lato', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+}
+
+.emailicon, .linkedin-icon {
+  width: 18px;
+}
 
 .profilePic {
   margin-top: 40px;
